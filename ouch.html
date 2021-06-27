@@ -7,27 +7,48 @@
 	a:link {
   color: #FF0000;
 }
-
 /* visited link */
 a:visited {
   color: #00FF00;
 }
-
 /* mouse over link */
 a:hover {
   color: #993322;
 }
-
 /* selected link */
 a:active {
   color: #0000FF;
 }
+input {
+	background-color: #e6ffff;
+	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+}
+input:focus {
+	background-color: seagreen;
+	color: greenyellow;
+	border: 3px solid #555;
+}
+input:hover {
+	background-color: deeppink;
+}
+h1 {
+	background-color: hsl(149, 100%, 95%);
+}
+h1:hover {
+ 	background-color: deeppink;
+}
 </style>
 <body style="background-color: oldlace;">
-	<h1 id="item1" style="background-color: hsl(149, 100%, 95%);"> This is just a test website for trying out various css properties on items </h1>	
+	<h1 id="item1"> This is just a test website for trying out various css properties on items </h1>	
 	<h2 id="red" style="background-color: red;">Red </h2>
 	<h3 id="blue" style="background-color: blueviolet;"> Blue </h3>
 	<p id="blue-background" style="background-color: blue;"> Has blue background </p>
 	<a href="https://www.google.com">Google</a>
+	<br>
+	<p> Enter name </p>
+	<input type="text">
 </body>
 </html>
