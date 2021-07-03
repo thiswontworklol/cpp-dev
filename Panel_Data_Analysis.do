@@ -54,6 +54,7 @@ twoway scatter mean_size bank
 twoway scatter size bankid, msymbol(circle_hollow) || connected mean_size bankid, msymbol(diamond)
 bysort year: egen mean_size2 = mean(size)
 twoway scatter size year, msymbol(circle_hollow) || connected mean_size2 year, msymbol(diamond)
+
 ** OLS is not suitable for panel data. Why? let's run the ols to see this. 
 xtset bank year 
 reg nim size 
