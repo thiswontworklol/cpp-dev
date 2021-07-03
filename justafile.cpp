@@ -6,4 +6,5 @@ int main(){
   std::cout << "Enter your name" << '\n';
   std::cin >> name;
   std::cout << "Hi" << ' ' << name <<'\n';
+  std::cout << "Bye!" << " " << name << '\n';
 }
