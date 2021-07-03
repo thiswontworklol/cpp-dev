@@ -226,9 +226,24 @@ Now graph will have bankid instead of bank names. It shows how each variable mov
 This will make a single graph for all banks instead of different graphs.
 
 .............................................................................................................................................
+
 . bysort bank: egen mean_size = mean(size)
 
 This command will generate a variable mean_size which will be the mean of the size variable.
 
 ............................................................................................................................................
 
+twoway scatter size bank
+
+Makes a scatter graph of size and bank
+
+............................................................................................................................................
+
+twoway scatter mean_size bank
+
+Makes a scatter diagran of mean of size and of bank
+............................................................................................................................................
+
+twoway scatter size bankid, msymbol(circle_hollow) || connected mean_size bankid, msymbol(diamond) 
+
+This command tells you to 
