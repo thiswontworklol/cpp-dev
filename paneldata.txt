@@ -246,4 +246,5 @@ Makes a scatter diagran of mean of size and of bank
 
 twoway scatter size bankid, msymbol(circle_hollow) || connected mean_size bankid, msymbol(diamond) 
 
-This command tells you to 
+This command tells you Stata to draw a scatter diagram of size and bankid, it tells it to use hollow circles in order to denote mean, it 
+also tells it to draw a connected mean_size bankid scatter with diamond as a mean symbol
