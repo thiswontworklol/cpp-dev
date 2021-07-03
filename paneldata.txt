@@ -226,3 +226,6 @@ Now graph will have bankid instead of bank names. It shows how each variable mov
 This will make a single graph for all banks instead of different graphs.
 
 .............................................................................................................................................
+. bysort bank: egen mean_size = mean(size)
+
+This command will generate a variable mean_size which will be the mean of the size variable.
